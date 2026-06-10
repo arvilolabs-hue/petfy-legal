@@ -1,15 +1,117 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Petfy Legal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #FCFAF8;
+      color: #2D2420;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+```
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+  color: #2D2420;
+}
+
+p {
+  font-size: 16px;
+}
+
+.muted {
+  color: #8A7E76;
+}
+
+.card {
+  background: #FFFFFF;
+  border: 1px solid #E9DED6;
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 24px;
+}
+
+.links {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+a.card-link {
+  display: block;
+  text-decoration: none;
+  color: #2D2420;
+  background: #FFFFFF;
+  border: 1px solid #E9DED6;
+  border-radius: 16px;
+  padding: 20px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+a.card-link:hover {
+  border-color: #F27A3A;
+  transform: translateY(-2px);
+}
+
+.card-link strong {
+  display: block;
+  color: #F27A3A;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #8A7E76;
+}
+```
+
+  </style>
 </head>
 <body>
-  <h1>Petfy Legal</h1>
-  <ul>
-    <li><a href="./privacy.html">Política de privacidad</a></li>
-    <li><a href="./delete-account.html">Eliminación de cuenta y datos</a></li>
-  </ul>
+  <main>
+    <h1>Petfy Legal</h1>
+    <p class="muted">Información legal de Petfy: Cuidado de Mascotas.</p>
+
+```
+<div class="card">
+  <p>
+    En esta página puedes consultar los documentos legales relacionados con Petfy, incluyendo la política de privacidad y la información sobre eliminación de cuenta y datos.
+  </p>
+</div>
+
+<section class="links">
+  <a class="card-link" href="./privacy.html">
+    <strong>Política de privacidad</strong>
+    Consulta cómo Petfy recopila, usa, protege y administra la información relacionada con la aplicación.
+  </a>
+
+  <a class="card-link" href="./delete-account.html">
+    <strong>Eliminación de cuenta y datos</strong>
+    Consulta cómo solicitar la eliminación de tu cuenta y de los datos asociados a Petfy.
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 Petfy. Todos los derechos reservados.</p>
+  <p>Contacto: support@petfy.app</p>
+</footer>
+```
+
+  </main>
 </body>
 </html>
