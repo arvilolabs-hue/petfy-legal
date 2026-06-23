@@ -1,149 +1,112 @@
-<!DOCTYPE html>
-
-<html lang="es">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eliminación de cuenta y datos - Petfy</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light only" />
+  <title>Delete Account and Data | Petfy</title>
+  <meta name="description" content="Request deletion of your Petfy account and data." />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #FCFAF8;
-      color: #2D2420;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
+    :root{
+      --bg:#FCFAF8;--card:#fff;--text:#1A1410;--muted:#6B6158;--line:#E8E0D8;
+      --accent:#C0400A;--soft:#FFF0E8;--shadow:0 12px 30px rgba(34,22,12,.08);--radius:24px;--max:980px;
     }
-
-```
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-h1, h2 {
-  color: #2D2420;
-}
-
-h1 {
-  font-size: 32px;
-  margin-bottom: 8px;
-}
-
-h2 {
-  margin-top: 32px;
-  font-size: 22px;
-}
-
-a {
-  color: #F27A3A;
-  font-weight: bold;
-}
-
-.card {
-  background: #FFFFFF;
-  border: 1px solid #E9DED6;
-  border-radius: 16px;
-  padding: 24px;
-  margin-top: 24px;
-}
-
-.muted {
-  color: #8A7E76;
-}
-
-ol, ul {
-  padding-left: 22px;
-}
-
-footer {
-  margin-top: 40px;
-  font-size: 14px;
-  color: #8A7E76;
-}
-```
-
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+    a{color:#9C3A08;text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max);margin:0 auto;padding:28px 18px 56px}
+    .hero,.section{background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:32px}
+    .hero{padding:28px}
+    .section{padding:22px;margin-top:16px}
+    .badge{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:999px;background:var(--soft);color:var(--accent);font-weight:800;font-size:13px;border:1px solid rgba(192,64,10,.12)}
+    h1{margin:14px 0 8px;font-size:clamp(32px,5vw,50px);line-height:1.05;letter-spacing:-.04em}
+    h2{margin:0 0 10px;font-size:22px;letter-spacing:-.02em}
+    p,li{color:var(--muted)}
+    ul{margin:10px 0 0 20px;padding:0}
+    .note{margin-top:12px;padding:14px 16px;border-radius:18px;background:#FFF8F3;border:1px solid rgba(192,64,10,.12);color:#7A3A16}
+    .steps{display:grid;gap:12px;margin-top:10px}
+    .step{
+      display:flex;gap:14px;align-items:flex-start;
+      border:1px solid var(--line);border-radius:20px;padding:16px;background:#fff;
+    }
+    .num{
+      width:34px;height:34px;flex:none;border-radius:50%;
+      background:var(--soft);color:var(--accent);display:grid;place-items:center;font-weight:900
+    }
+    .footer{margin-top:18px;padding-top:6px;color:var(--muted);font-size:13px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+    @media (max-width:760px){.hero{padding:22px}.section{padding:18px}}
   </style>
 </head>
 <body>
-  <main>
-    <h1>Eliminación de cuenta y datos</h1>
-    <p class="muted">Última actualización: 10 de junio de 2026</p>
+  <main class="wrap">
+    <section class="hero">
+      <span class="badge">Petfy · Account Deletion</span>
+      <h1>Delete Account and Data</h1>
+      <p>You can request deletion of your account and related data without reopening the app.</p>
+      <p>Last updated: June 2026 · Contact: <a href="mailto:legal@petfy.app">legal@petfy.app</a></p>
+    </section>
 
-```
-<div class="card">
-  <p>
-    Esta página explica cómo los usuarios de <strong>Petfy: Cuidado de Mascotas</strong> pueden solicitar la eliminación de su cuenta y de los datos asociados.
-  </p>
-</div>
+    <section class="section">
+      <h2>What gets deleted</h2>
+      <ul>
+        <li>User account.</li>
+        <li>Profile and associated preferences.</li>
+        <li>Pet data, health data, reminders, and account-linked content.</li>
+        <li>Associated private files when applicable.</li>
+      </ul>
+    </section>
 
-<h2>1. Cómo eliminar tu cuenta desde la aplicación</h2>
-<p>Si la función está disponible dentro de la app, puedes seguir estos pasos:</p>
-<ol>
-  <li>Abre Petfy.</li>
-  <li>Inicia sesión en tu cuenta.</li>
-  <li>Ve a Perfil o Configuración.</li>
-  <li>Entra a Seguridad, Cuenta o una sección similar.</li>
-  <li>Selecciona la opción Eliminar cuenta.</li>
-  <li>Confirma la solicitud de eliminación.</li>
-</ol>
+    <section class="section">
+      <h2>What may be retained</h2>
+      <p>
+        We may retain certain information only if required by law, security, fraud prevention, or regulatory compliance. If that happens, it will be described in the privacy policy.
+      </p>
+    </section>
 
-<h2>2. Solicitud por correo electrónico</h2>
-<p>
-  Si no puedes eliminar tu cuenta desde la app, puedes solicitar la eliminación escribiendo a:
-  <a href="mailto:support@petfy.app">support@petfy.app</a>
-</p>
-<p>Incluye en el correo:</p>
-<ul>
-  <li>El correo electrónico asociado a tu cuenta de Petfy.</li>
-  <li>Una solicitud clara de eliminación de cuenta y datos.</li>
-</ul>
+    <section class="section">
+      <h2>How to request deletion</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <div>
+            <strong>Open the in-app flow</strong>
+            <p>Go to Settings &gt; Security &gt; Delete account and data.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <div>
+            <strong>Confirm your identity</strong>
+            <p>The app may ask for verification to prevent accidental or unauthorized deletion.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <div>
+            <strong>If you cannot access the app</strong>
+            <p>Email <a href="mailto:legal@petfy.app">legal@petfy.app</a> with the subject “Delete my Petfy account”.</p>
+          </div>
+        </div>
+      </div>
+      <div class="note">
+        Google Play requires this page to be functional and let users start the deletion request without reinstalling the app.
+      </div>
+    </section>
 
-<h2>3. Datos que se eliminarán</h2>
-<p>Cuando procesemos la eliminación, se eliminarán o anonimizarán los datos asociados a tu cuenta, incluyendo:</p>
-<ul>
-  <li>Cuenta de usuario.</li>
-  <li>Perfil del usuario.</li>
-  <li>Datos de mascotas.</li>
-  <li>Fotos de mascotas, si fueron agregadas.</li>
-  <li>Registros de salud de mascotas.</li>
-  <li>Vacunas, medicamentos, peso, alimentación y recordatorios.</li>
-  <li>Notas o registros asociados a tus mascotas.</li>
-  <li>Datos asociados a funciones de Petfy AI, cuando corresponda.</li>
-</ul>
+    <section class="section">
+      <h2>Response time</h2>
+      <p>We aim to complete or respond to deletion requests within a reasonable time. If additional steps are required, they will be clearly explained.</p>
+    </section>
 
-<h2>4. Datos que podrían conservarse temporalmente</h2>
-<p>
-  Algunos datos podrían conservarse durante un periodo limitado cuando sea necesario por motivos de seguridad, prevención de abuso, cumplimiento legal, resolución de disputas o registros de transacciones.
-</p>
-<p>
-  Los datos de compras o suscripciones también pueden conservarse o gestionarse mediante Google Play u otros proveedores de pago conforme a sus propias políticas.
-</p>
+    <section class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:legal@petfy.app">legal@petfy.app</a></p>
+    </section>
 
-<h2>5. Tiempo de procesamiento</h2>
-<p>
-  Las solicitudes de eliminación pueden tardar hasta 30 días en procesarse, salvo que la ley aplicable permita o exija un periodo diferente.
-</p>
-
-<h2>6. Cancelación de suscripciones</h2>
-<p>
-  Eliminar tu cuenta de Petfy no siempre cancela automáticamente una suscripción activa gestionada por Google Play. Si tienes una suscripción activa, debes cancelarla desde Google Play para evitar renovaciones futuras.
-</p>
-
-<h2>7. Contacto</h2>
-<p>
-  Para solicitar eliminación de cuenta o hacer preguntas sobre tus datos, escribe a:
-  <a href="mailto:support@petfy.app">support@petfy.app</a>
-</p>
-
-<footer>
-  <p>© 2026 Petfy. Todos los derechos reservados.</p>
-  <p><a href="./privacy.html">Política de privacidad</a></p>
-  <p><a href="./index.html">Volver a Petfy Legal</a></p>
-</footer>
-```
-
+    <footer class="footer">
+      <span>Petfy · Arvilo Labs</span>
+      <span>Public deletion request flow</span>
+    </footer>
   </main>
 </body>
 </html>
