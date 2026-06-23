@@ -1,210 +1,121 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-language="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light only" />
   <title>Privacy Policy | Petfy</title>
   <meta name="description" content="Petfy privacy policy." />
-  <style>
-    :root{
-      --bg:#FCFAF8;--card:#fff;--text:#1A1410;--muted:#6B6158;--line:#E8E0D8;
-      --accent:#C0400A;--soft:#FFF0E8;--shadow:0 12px 30px rgba(34,22,12,.08);--radius:24px;--max:980px;
-    }
-    *{box-sizing:border-box}
-    html,body{
-      margin:0;padding:0;background:
-        radial-gradient(circle at top left, rgba(255,159,107,.24), transparent 30%),
-        radial-gradient(circle at top right, rgba(192,64,10,.12), transparent 25%),
-        var(--bg);
-      color:var(--text);
-      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-      line-height:1.6
-    }
-    a{color:#9C3A08;text-decoration:none} a:hover{text-decoration:underline}
-    .wrap{max-width:var(--max);margin:0 auto;padding:28px 18px 56px}
-    .hero,.section{background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:32px}
-    .hero{padding:28px}
-    .section{padding:22px;margin-top:16px}
-    .badge{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:999px;background:var(--soft);color:var(--accent);font-weight:800;font-size:13px;border:1px solid rgba(192,64,10,.12)}
-    h1{margin:14px 0 8px;font-size:clamp(32px,5vw,50px);line-height:1.05;letter-spacing:-.04em}
-    h2{margin:0 0 10px;font-size:22px;letter-spacing:-.02em}
-    h3{margin:18px 0 8px;font-size:16px}
-    p,li{color:var(--muted)}
-    ul{margin:10px 0 0 20px;padding:0}
-    .sub{max-width:76ch;margin:0}
-    .note{margin-top:12px;padding:14px 16px;border-radius:18px;background:#FFF8F3;border:1px solid rgba(192,64,10,.12);color:#7A3A16}
-    .table{width:100%;border-collapse:collapse;margin-top:10px;font-size:14px}
-    .table th,.table td{border:1px solid var(--line);padding:10px 12px;vertical-align:top;text-align:left}
-    .table th{background:#FFF8F3;color:#5c2a11}
-    .footer{
-      margin-top:18px;padding-top:6px;color:var(--muted);font-size:13px;
-      display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between
-    }
-    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-    .tag{padding:8px 10px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:12px;font-weight:700;color:#51493f}
-    .toc a{display:inline-block;margin:0 12px 8px 0}
-    @media (max-width:760px){.hero{padding:22px}.section{padding:18px}}
-  </style>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./language.js" defer></script>
 </head>
 <body>
   <main class="wrap">
+    <header class="topbar">
+      <a class="brand" href="./index.html">Petfy Legal</a>
+      <nav class="nav" aria-label="Legal navigation">
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+        <a href="./delete-account.html">Delete account</a>
+        <a href="./ai-notice.html">AI</a>
+        <a href="./dmca.html">DMCA</a>
+        <div class="language-switcher" aria-label="Language selector">
+          <button type="button" data-language-button="en">EN</button>
+          <button type="button" data-language-button="es">ES</button>
+        </div>
+      </nav>
+    </header>
+
     <section class="hero">
-      <span class="badge">Petfy · Privacy Policy</span>
-      <h1>Privacy Policy</h1>
-      <p class="sub">
-        This policy explains what information Petfy handles, why it is used, and how users can control their data.
-      </p>
+      <span class="badge">Petfy · Privacy</span>
+      <div class="lang-en">
+        <h1>Privacy Policy</h1>
+        <p class="sub">This policy explains what information Petfy handles, why it is used, and how users can control their data.</p>
+      </div>
+      <div class="lang-es">
+        <h1>Politica de privacidad</h1>
+        <p class="sub">Esta politica explica que informacion maneja Petfy, por que se usa y como los usuarios pueden controlar sus datos.</p>
+      </div>
       <div class="tags">
         <span class="tag">Last updated: June 2026</span>
-        <span class="tag">Arvilo Labs</span>
-        <span class="tag">Contact: legal@petfy.app</span>
+        <span class="tag">Arvilo</span>
+        <span class="tag">arvilolabs@gmail.com</span>
       </div>
     </section>
 
-    <section class="section toc">
-      <h2>Contents</h2>
-      <a href="#controller">Controller</a>
-      <a href="#data">Data we process</a>
-      <a href="#use">How we use data</a>
-      <a href="#third-parties">Third parties</a>
-      <a href="#retention">Retention</a>
-      <a href="#rights">User rights</a>
-      <a href="#security">Security</a>
-      <a href="#contact">Contact</a>
+    <section class="section">
+      <div class="lang-en">
+        <h2>1. Data controller</h2>
+        <p>Petfy is operated by Arvilo. The contact email for privacy and support matters is <a href="mailto:arvilolabs@gmail.com">arvilolabs@gmail.com</a>. This policy applies to the Petfy mobile app and associated web services.</p>
+      </div>
+      <div class="lang-es">
+        <h2>1. Responsable del tratamiento</h2>
+        <p>Petfy es operada por Arvilo. El correo de contacto para privacidad y soporte es <a href="mailto:arvilolabs@gmail.com">arvilolabs@gmail.com</a>. Esta politica aplica a la app movil Petfy y sus servicios web asociados.</p>
+      </div>
     </section>
 
-    <section class="section" id="controller">
-      <h2>1. Data controller</h2>
-      <p>
-        Petfy is operated by Arvilo Labs. The contact email for privacy and support matters is
-        <a href="mailto:legal@petfy.app">legal@petfy.app</a>.
-      </p>
-      <p>This policy applies to the Petfy mobile app and its associated web services.</p>
+    <section class="section">
+      <div class="lang-en">
+        <h2>2. Data we process</h2>
+        <table class="table">
+          <thead><tr><th>Type</th><th>Examples</th><th>Purpose</th></tr></thead>
+          <tbody>
+            <tr><td>Account</td><td>Email, user ID, session, language, settings.</td><td>Authentication and personalization.</td></tr>
+            <tr><td>Pet data</td><td>Name, species, breed, sex, birth date, photo, notes.</td><td>Pet profiles and care organization.</td></tr>
+            <tr><td>Health and care</td><td>Vaccines, medication, reminders, weight, feeding, symptoms.</td><td>Care history and alerts.</td></tr>
+            <tr><td>User content</td><td>Photos, documents, support messages, typed text.</td><td>App functionality and support.</td></tr>
+            <tr><td>Location</td><td>Approximate or precise location for nearby vet search.</td><td>Nearby results and distance calculation.</td></tr>
+            <tr><td>Purchases</td><td>Subscription status and entitlements.</td><td>Premium feature access.</td></tr>
+            <tr><td>Diagnostics</td><td>Errors, technical events, telemetry.</td><td>Stability, security, and debugging.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="lang-es">
+        <h2>2. Datos que tratamos</h2>
+        <table class="table">
+          <thead><tr><th>Tipo</th><th>Ejemplos</th><th>Finalidad</th></tr></thead>
+          <tbody>
+            <tr><td>Cuenta</td><td>Correo, ID de usuario, sesion, idioma, ajustes.</td><td>Autenticacion y personalizacion.</td></tr>
+            <tr><td>Mascotas</td><td>Nombre, especie, raza, sexo, nacimiento, foto, notas.</td><td>Perfiles y organizacion de cuidados.</td></tr>
+            <tr><td>Salud y cuidado</td><td>Vacunas, medicamentos, recordatorios, peso, alimentacion, sintomas.</td><td>Historial y alertas.</td></tr>
+            <tr><td>Contenido</td><td>Fotos, documentos, mensajes de soporte, texto escrito.</td><td>Funcionalidad y soporte.</td></tr>
+            <tr><td>Ubicacion</td><td>Ubicacion aproximada o precisa para buscar veterinarias.</td><td>Resultados cercanos y calculo de distancia.</td></tr>
+            <tr><td>Compras</td><td>Estado de suscripcion y beneficios.</td><td>Acceso premium.</td></tr>
+            <tr><td>Diagnostico tecnico</td><td>Errores, eventos tecnicos, telemetria.</td><td>Estabilidad, seguridad y depuracion.</td></tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
-    <section class="section" id="data">
-      <h2>2. Data we process</h2>
-      <table class="table" aria-label="Petfy processed data">
-        <thead>
-          <tr>
-            <th>Data type</th>
-            <th>Examples</th>
-            <th>Purpose</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Account data</td>
-            <td>Email, user ID, session, language preferences, and app settings.</td>
-            <td>Authentication, access, and personalization.</td>
-          </tr>
-          <tr>
-            <td>Pet data</td>
-            <td>Name, species, breed, sex, birth date, photo, and notes.</td>
-            <td>Display profiles and organize care.</td>
-          </tr>
-          <tr>
-            <td>Health and care data</td>
-            <td>Vaccines, medication, reminders, weight, feeding, symptoms, and observations.</td>
-            <td>Track pet care history and alerts.</td>
-          </tr>
-          <tr>
-            <td>User content</td>
-            <td>Photos, documents, support messages, and text entered in the app.</td>
-            <td>App functionality and support.</td>
-          </tr>
-          <tr>
-            <td>Location</td>
-            <td>Approximate or precise location when searching for nearby vets.</td>
-            <td>Show nearby results and calculate distance.</td>
-          </tr>
-          <tr>
-            <td>Purchases</td>
-            <td>Subscription status and entitlements managed by the payment provider.</td>
-            <td>Enable premium features.</td>
-          </tr>
-          <tr>
-            <td>Diagnostics and security</td>
-            <td>Errors, technical events, logs, and telemetry.</td>
-            <td>Stability, security, and debugging.</td>
-          </tr>
-        </tbody>
-      </table>
+    <section class="section">
+      <div class="lang-en">
+        <h2>3. Use, sharing, and providers</h2>
+        <p>We use data to provide accounts, pet records, reminders, nearby vet search, AI features, support, subscriptions, diagnostics, and security. Petfy does not sell personal information for advertising.</p>
+        <p>Providers may include Supabase, Google Places / Maps, OpenAI, RevenueCat, Sentry, and Expo, depending on enabled features.</p>
+      </div>
+      <div class="lang-es">
+        <h2>3. Uso, terceros y proveedores</h2>
+        <p>Usamos datos para cuentas, registros de mascotas, recordatorios, busqueda de veterinarias, IA, soporte, suscripciones, diagnostico tecnico y seguridad. Petfy no vende informacion personal para publicidad.</p>
+        <p>Los proveedores pueden incluir Supabase, Google Places / Maps, OpenAI, RevenueCat, Sentry y Expo, segun las funciones activas.</p>
+      </div>
     </section>
 
-    <section class="section" id="use">
-      <h2>3. How we use data</h2>
-      <ul>
-        <li>Create and maintain user accounts.</li>
-        <li>Store pet profiles, reminders, and health records.</li>
-        <li>Show nearby veterinarians, maps, distance, and availability.</li>
-        <li>Send local notifications and manage reminders.</li>
-        <li>Provide AI features with consent and within an informational scope.</li>
-        <li>Handle support, security, error recovery, and subscriptions.</li>
-      </ul>
-      <div class="note">Petfy does not use this information for personalized advertising.</div>
-    </section>
-
-    <section class="section" id="third-parties">
-      <h2>4. Third parties and providers</h2>
-      <p>Petfy may use external providers only to deliver necessary technical services.</p>
-      <ul>
-        <li>Supabase: authentication, database, storage, and serverless functions.</li>
-        <li>Google Places / Maps: nearby veterinarian search.</li>
-        <li>OpenAI: informational AI assistance.</li>
-        <li>RevenueCat: subscriptions, when enabled.</li>
-        <li>Sentry: error diagnostics, when enabled.</li>
-        <li>Expo: build and notification services, depending on configuration.</li>
-      </ul>
-      <p>
-        These providers act as processors or technical service providers depending on the context. Petfy does not sell your personal information to advertisers.
-      </p>
-    </section>
-
-    <section class="section" id="retention">
-      <h2>5. Data retention</h2>
-      <p>
-        We keep information while the account remains active or as long as necessary to provide the service, comply with legal obligations, resolve disputes, prevent fraud, or enforce our terms.
-      </p>
-      <p>
-        When a user requests deletion, we follow the app and web deletion flow, subject to any data that must be retained by law or for legitimate security purposes.
-      </p>
-    </section>
-
-    <section class="section" id="rights">
-      <h2>6. User rights</h2>
-      <ul>
-        <li>Review, correct, or update account and pet information.</li>
-        <li>Request account and data deletion.</li>
-        <li>Disable device permissions where possible.</li>
-        <li>Withdraw consent from features that depend on it.</li>
-      </ul>
-      <p>Privacy requests can be sent to <a href="mailto:legal@petfy.app">legal@petfy.app</a>.</p>
-    </section>
-
-    <section class="section" id="security">
-      <h2>7. Security</h2>
-      <p>
-        We use access controls, authentication, server-side policies, and reasonable safeguards to protect information.
-        No system is perfectly secure, but Petfy works to reduce unnecessary exposure and protect user data.
-      </p>
-      <ul>
-        <li>We do not expose secrets in the visible interface.</li>
-        <li>Access to data is restricted to authenticated users and permitted server logic.</li>
-        <li>Photos and documents are treated as sensitive user information.</li>
-      </ul>
-    </section>
-
-    <section class="section" id="contact">
-      <h2>8. Contact</h2>
-      <p>Privacy and support email: <a href="mailto:legal@petfy.app">legal@petfy.app</a></p>
-      <p>If this address changes, update this page before publishing a new app release.</p>
+    <section class="section">
+      <div class="lang-en">
+        <h2>4. Retention, rights, and security</h2>
+        <p>We keep information while the account is active or as needed to provide the service, comply with legal obligations, resolve disputes, prevent fraud, or enforce terms.</p>
+        <p>Users may review, correct, update, or request deletion of their account and data. We use authentication, access controls, server-side policies, and reasonable safeguards to protect information.</p>
+      </div>
+      <div class="lang-es">
+        <h2>4. Retencion, derechos y seguridad</h2>
+        <p>Conservamos informacion mientras la cuenta este activa o sea necesaria para prestar el servicio, cumplir obligaciones legales, resolver disputas, prevenir fraude o aplicar terminos.</p>
+        <p>Los usuarios pueden revisar, corregir, actualizar o solicitar eliminacion de cuenta y datos. Usamos autenticacion, controles de acceso, politicas de servidor y medidas razonables de seguridad.</p>
+      </div>
     </section>
 
     <footer class="footer">
-      <span>Petfy · Arvilo Labs</span>
-      <span>Public HTTPS page</span>
+      <span>Petfy · Arvilo</span>
+      <span><a href="mailto:arvilolabs@gmail.com">arvilolabs@gmail.com</a></span>
     </footer>
   </main>
 </body>
