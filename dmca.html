@@ -1,72 +1,82 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-language="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light only" />
   <title>Copyright / DMCA | Petfy</title>
   <meta name="description" content="Petfy copyright and infringement reporting policy." />
-  <style>
-    :root{
-      --bg:#FCFAF8;--card:#fff;--text:#1A1410;--muted:#6B6158;--line:#E8E0D8;
-      --accent:#C0400A;--soft:#FFF0E8;--shadow:0 12px 30px rgba(34,22,12,.08);--radius:24px;--max:980px;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
-    a{color:#9C3A08;text-decoration:none} a:hover{text-decoration:underline}
-    .wrap{max-width:var(--max);margin:0 auto;padding:28px 18px 56px}
-    .hero,.section{background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:32px}
-    .hero{padding:28px}
-    .section{padding:22px;margin-top:16px}
-    .badge{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:999px;background:var(--soft);color:var(--accent);font-weight:800;font-size:13px;border:1px solid rgba(192,64,10,.12)}
-    h1{margin:14px 0 8px;font-size:clamp(32px,5vw,50px);line-height:1.05;letter-spacing:-.04em}
-    h2{margin:0 0 10px;font-size:22px;letter-spacing:-.02em}
-    p,li{color:var(--muted)}
-    ul{margin:10px 0 0 20px;padding:0}
-    .note{margin-top:12px;padding:14px 16px;border-radius:18px;background:#FFF8F3;border:1px solid rgba(192,64,10,.12);color:#7A3A16}
-    .footer{margin-top:18px;padding-top:6px;color:var(--muted);font-size:13px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
-    @media (max-width:760px){.hero{padding:22px}.section{padding:18px}}
-  </style>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./language.js" defer></script>
 </head>
 <body>
   <main class="wrap">
+    <header class="topbar">
+      <a class="brand" href="./index.html">Petfy Legal</a>
+      <nav class="nav" aria-label="Legal navigation">
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+        <a href="./delete-account.html">Delete account</a>
+        <a href="./ai-notice.html">AI</a>
+        <a href="./dmca.html">DMCA</a>
+        <div class="language-switcher" aria-label="Language selector">
+          <button type="button" data-language-button="en">EN</button>
+          <button type="button" data-language-button="es">ES</button>
+        </div>
+      </nav>
+    </header>
+
     <section class="hero">
       <span class="badge">Petfy · Copyright / DMCA</span>
-      <h1>Copyright and Infringement Reporting</h1>
-      <p>
-        Petfy respects intellectual property. If you believe content hosted or published through the platform infringes your rights, you can send a report.
-      </p>
-      <p>Last updated: June 2026 · Contact: <a href="mailto:legal@petfy.app">legal@petfy.app</a></p>
+      <div class="lang-en">
+        <h1>Copyright and Infringement Reporting</h1>
+        <p class="sub">Petfy respects intellectual property. If you believe content hosted or published through the platform infringes your rights, you can send a report.</p>
+      </div>
+      <div class="lang-es">
+        <h1>Copyright y reporte de infracciones</h1>
+        <p class="sub">Petfy respeta la propiedad intelectual. Si consideras que contenido alojado o publicado por la plataforma infringe tus derechos, puedes enviar un reporte.</p>
+      </div>
     </section>
 
     <section class="section">
-      <h2>What to include</h2>
-      <ul>
-        <li>Your full name and contact details.</li>
-        <li>Clear identification of the protected work.</li>
-        <li>The exact location of the allegedly infringing content.</li>
-        <li>A good-faith statement that the use is not authorized.</li>
-        <li>A statement under penalty of perjury that the information is accurate.</li>
-        <li>A physical or electronic signature.</li>
-      </ul>
+      <div class="lang-en">
+        <h2>What to include</h2>
+        <ul>
+          <li>Your full name and contact details.</li>
+          <li>Clear identification of the protected work.</li>
+          <li>The exact location of the allegedly infringing content.</li>
+          <li>A good-faith statement that the use is not authorized.</li>
+          <li>A statement under penalty of perjury that the information is accurate.</li>
+          <li>A physical or electronic signature.</li>
+        </ul>
+      </div>
+      <div class="lang-es">
+        <h2>Que debes incluir</h2>
+        <ul>
+          <li>Tu nombre completo y datos de contacto.</li>
+          <li>Identificacion clara de la obra protegida.</li>
+          <li>Ubicacion exacta del contenido presuntamente infractor.</li>
+          <li>Declaracion de buena fe de que el uso no esta autorizado.</li>
+          <li>Declaracion bajo pena de perjurio de que la informacion es exacta.</li>
+          <li>Firma fisica o electronica.</li>
+        </ul>
+      </div>
     </section>
 
     <section class="section">
-      <h2>Counter-notification</h2>
-      <p>
-        If your content was removed by mistake or misidentification, you may reply with a counter-notification and explain why you believe no infringement exists.
-      </p>
+      <div class="lang-en">
+        <h2>Counter-notification and contact</h2>
+        <p>If your content was removed by mistake or misidentification, you may reply with a counter-notification and explain why you believe no infringement exists.</p>
+        <p>Legal email: <a href="mailto:arvilolabs@gmail.com">arvilolabs@gmail.com</a></p>
+      </div>
+      <div class="lang-es">
+        <h2>Contranotificacion y contacto</h2>
+        <p>Si tu contenido fue retirado por error o identificacion incorrecta, puedes responder con una contranotificacion y explicar por que consideras que no existe infraccion.</p>
+        <p>Correo legal: <a href="mailto:arvilolabs@gmail.com">arvilolabs@gmail.com</a></p>
+      </div>
     </section>
 
-    <section class="section">
-      <h2>Contact channel</h2>
-      <p>Legal email: <a href="mailto:legal@petfy.app">legal@petfy.app</a></p>
-    </section>
-
-    <footer class="footer">
-      <span>Petfy · Arvilo Labs</span>
-      <span>Intellectual property</span>
-    </footer>
+    <footer class="footer"><span>Petfy · Arvilo</span><span><a href="mailto:arvilolabs@gmail.com">arvilolabs@gmail.com</a></span></footer>
   </main>
 </body>
 </html>
