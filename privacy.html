@@ -1,224 +1,211 @@
-<!DOCTYPE html>
-
-<html lang="es">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidad - Petfy</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light only" />
+  <title>Privacy Policy | Petfy</title>
+  <meta name="description" content="Petfy privacy policy." />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #FCFAF8;
-      color: #2D2420;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
+    :root{
+      --bg:#FCFAF8;--card:#fff;--text:#1A1410;--muted:#6B6158;--line:#E8E0D8;
+      --accent:#C0400A;--soft:#FFF0E8;--shadow:0 12px 30px rgba(34,22,12,.08);--radius:24px;--max:980px;
     }
-
-```
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-h1, h2 {
-  color: #2D2420;
-}
-
-h1 {
-  font-size: 32px;
-  margin-bottom: 8px;
-}
-
-h2 {
-  margin-top: 32px;
-  font-size: 22px;
-}
-
-a {
-  color: #F27A3A;
-  font-weight: bold;
-}
-
-.card {
-  background: #FFFFFF;
-  border: 1px solid #E9DED6;
-  border-radius: 16px;
-  padding: 24px;
-  margin-top: 24px;
-}
-
-.muted {
-  color: #8A7E76;
-}
-
-ul {
-  padding-left: 22px;
-}
-
-footer {
-  margin-top: 40px;
-  font-size: 14px;
-  color: #8A7E76;
-}
-```
-
+    *{box-sizing:border-box}
+    html,body{
+      margin:0;padding:0;background:
+        radial-gradient(circle at top left, rgba(255,159,107,.24), transparent 30%),
+        radial-gradient(circle at top right, rgba(192,64,10,.12), transparent 25%),
+        var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      line-height:1.6
+    }
+    a{color:#9C3A08;text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max);margin:0 auto;padding:28px 18px 56px}
+    .hero,.section{background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:32px}
+    .hero{padding:28px}
+    .section{padding:22px;margin-top:16px}
+    .badge{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:999px;background:var(--soft);color:var(--accent);font-weight:800;font-size:13px;border:1px solid rgba(192,64,10,.12)}
+    h1{margin:14px 0 8px;font-size:clamp(32px,5vw,50px);line-height:1.05;letter-spacing:-.04em}
+    h2{margin:0 0 10px;font-size:22px;letter-spacing:-.02em}
+    h3{margin:18px 0 8px;font-size:16px}
+    p,li{color:var(--muted)}
+    ul{margin:10px 0 0 20px;padding:0}
+    .sub{max-width:76ch;margin:0}
+    .note{margin-top:12px;padding:14px 16px;border-radius:18px;background:#FFF8F3;border:1px solid rgba(192,64,10,.12);color:#7A3A16}
+    .table{width:100%;border-collapse:collapse;margin-top:10px;font-size:14px}
+    .table th,.table td{border:1px solid var(--line);padding:10px 12px;vertical-align:top;text-align:left}
+    .table th{background:#FFF8F3;color:#5c2a11}
+    .footer{
+      margin-top:18px;padding-top:6px;color:var(--muted);font-size:13px;
+      display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between
+    }
+    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+    .tag{padding:8px 10px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:12px;font-weight:700;color:#51493f}
+    .toc a{display:inline-block;margin:0 12px 8px 0}
+    @media (max-width:760px){.hero{padding:22px}.section{padding:18px}}
   </style>
 </head>
 <body>
-  <main>
-    <h1>Política de Privacidad de Petfy</h1>
-    <p class="muted">Última actualización: 10 de junio de 2026</p>
+  <main class="wrap">
+    <section class="hero">
+      <span class="badge">Petfy · Privacy Policy</span>
+      <h1>Privacy Policy</h1>
+      <p class="sub">
+        This policy explains what information Petfy handles, why it is used, and how users can control their data.
+      </p>
+      <div class="tags">
+        <span class="tag">Last updated: June 2026</span>
+        <span class="tag">Arvilo Labs</span>
+        <span class="tag">Contact: legal@petfy.app</span>
+      </div>
+    </section>
 
-```
-<div class="card">
-  <p>
-    Esta Política de Privacidad explica cómo Petfy recopila, usa, almacena y protege la información relacionada con el uso de la aplicación <strong>Petfy: Cuidado de Mascotas</strong>.
-  </p>
-  <p>
-    Petfy es una aplicación diseñada para ayudar a los usuarios a organizar el cuidado de sus mascotas mediante perfiles, recordatorios, registros de salud, alimentación, peso, notas, fotografías y funciones de asistencia general.
-  </p>
-  <p>
-    Petfy no reemplaza la atención veterinaria profesional, no ofrece diagnóstico veterinario, no prescribe tratamientos y no está diseñada para emergencias veterinarias.
-  </p>
-</div>
+    <section class="section toc">
+      <h2>Contents</h2>
+      <a href="#controller">Controller</a>
+      <a href="#data">Data we process</a>
+      <a href="#use">How we use data</a>
+      <a href="#third-parties">Third parties</a>
+      <a href="#retention">Retention</a>
+      <a href="#rights">User rights</a>
+      <a href="#security">Security</a>
+      <a href="#contact">Contact</a>
+    </section>
 
-<h2>1. Responsable de la aplicación</h2>
-<p>
-  La aplicación Petfy es operada por Arvilo Labs, con base en Nicaragua.
-</p>
-<p>
-  Para consultas sobre privacidad, puedes escribir a:
-  <a href="mailto:support@petfy.app">support@petfy.app</a>
-</p>
+    <section class="section" id="controller">
+      <h2>1. Data controller</h2>
+      <p>
+        Petfy is operated by Arvilo Labs. The contact email for privacy and support matters is
+        <a href="mailto:legal@petfy.app">legal@petfy.app</a>.
+      </p>
+      <p>This policy applies to the Petfy mobile app and its associated web services.</p>
+    </section>
 
-<h2>2. Información que podemos recopilar</h2>
-<p>Petfy puede recopilar o almacenar los siguientes tipos de información, según las funciones que el usuario utilice:</p>
-<ul>
-  <li>Datos de cuenta, como correo electrónico e identificador de usuario.</li>
-  <li>Información de perfil del usuario, si el usuario la agrega.</li>
-  <li>Datos de mascotas, como nombre, especie, raza, fecha de nacimiento, sexo, peso y notas.</li>
-  <li>Registros de salud de mascotas, como vacunas, medicamentos, desparasitación, controles, peso y observaciones.</li>
-  <li>Recordatorios creados por el usuario.</li>
-  <li>Registros de alimentación y cuidado.</li>
-  <li>Fotos de mascotas, si el usuario decide agregarlas.</li>
-  <li>Consultas o mensajes enviados a Petfy AI.</li>
-  <li>Información de compras o suscripciones gestionadas mediante Google Play o servicios de suscripción.</li>
-  <li>Información técnica básica necesaria para seguridad, diagnóstico de errores y funcionamiento de la app.</li>
-  <li>Ubicación aproximada o precisa, si el usuario utiliza funciones relacionadas con veterinarias cercanas o mapas.</li>
-</ul>
+    <section class="section" id="data">
+      <h2>2. Data we process</h2>
+      <table class="table" aria-label="Petfy processed data">
+        <thead>
+          <tr>
+            <th>Data type</th>
+            <th>Examples</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Account data</td>
+            <td>Email, user ID, session, language preferences, and app settings.</td>
+            <td>Authentication, access, and personalization.</td>
+          </tr>
+          <tr>
+            <td>Pet data</td>
+            <td>Name, species, breed, sex, birth date, photo, and notes.</td>
+            <td>Display profiles and organize care.</td>
+          </tr>
+          <tr>
+            <td>Health and care data</td>
+            <td>Vaccines, medication, reminders, weight, feeding, symptoms, and observations.</td>
+            <td>Track pet care history and alerts.</td>
+          </tr>
+          <tr>
+            <td>User content</td>
+            <td>Photos, documents, support messages, and text entered in the app.</td>
+            <td>App functionality and support.</td>
+          </tr>
+          <tr>
+            <td>Location</td>
+            <td>Approximate or precise location when searching for nearby vets.</td>
+            <td>Show nearby results and calculate distance.</td>
+          </tr>
+          <tr>
+            <td>Purchases</td>
+            <td>Subscription status and entitlements managed by the payment provider.</td>
+            <td>Enable premium features.</td>
+          </tr>
+          <tr>
+            <td>Diagnostics and security</td>
+            <td>Errors, technical events, logs, and telemetry.</td>
+            <td>Stability, security, and debugging.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-<h2>3. Cómo usamos la información</h2>
-<p>Usamos la información para:</p>
-<ul>
-  <li>Crear y administrar la cuenta del usuario.</li>
-  <li>Guardar y mostrar perfiles de mascotas.</li>
-  <li>Gestionar recordatorios, registros de salud, alimentación y peso.</li>
-  <li>Generar reportes o documentos relacionados con las mascotas, si el usuario lo solicita.</li>
-  <li>Permitir el funcionamiento de funciones Premium o Premium Plus.</li>
-  <li>Procesar o validar suscripciones mediante Google Play o proveedores de suscripción.</li>
-  <li>Ofrecer asistencia general mediante Petfy AI.</li>
-  <li>Mejorar la estabilidad, seguridad y funcionamiento de la aplicación.</li>
-  <li>Ayudar a encontrar veterinarias cercanas, si esa función está disponible y el usuario la utiliza.</li>
-</ul>
+    <section class="section" id="use">
+      <h2>3. How we use data</h2>
+      <ul>
+        <li>Create and maintain user accounts.</li>
+        <li>Store pet profiles, reminders, and health records.</li>
+        <li>Show nearby veterinarians, maps, distance, and availability.</li>
+        <li>Send local notifications and manage reminders.</li>
+        <li>Provide AI features with consent and within an informational scope.</li>
+        <li>Handle support, security, error recovery, and subscriptions.</li>
+      </ul>
+      <div class="note">Petfy does not use this information for personalized advertising.</div>
+    </section>
 
-<h2>4. Petfy AI</h2>
-<p>
-  Petfy AI puede procesar preguntas, mensajes o contexto relacionado con mascotas que el usuario decida enviar. Esta función ofrece orientación general sobre cuidado de mascotas.
-</p>
-<p>
-  Petfy AI no proporciona diagnóstico veterinario, no reemplaza a un veterinario, no prescribe medicamentos y no debe usarse para emergencias. Ante cualquier problema médico o situación urgente, el usuario debe consultar a un profesional veterinario.
-</p>
+    <section class="section" id="third-parties">
+      <h2>4. Third parties and providers</h2>
+      <p>Petfy may use external providers only to deliver necessary technical services.</p>
+      <ul>
+        <li>Supabase: authentication, database, storage, and serverless functions.</li>
+        <li>Google Places / Maps: nearby veterinarian search.</li>
+        <li>OpenAI: informational AI assistance.</li>
+        <li>RevenueCat: subscriptions, when enabled.</li>
+        <li>Sentry: error diagnostics, when enabled.</li>
+        <li>Expo: build and notification services, depending on configuration.</li>
+      </ul>
+      <p>
+        These providers act as processors or technical service providers depending on the context. Petfy does not sell your personal information to advertisers.
+      </p>
+    </section>
 
-<h2>5. Fotos y archivos</h2>
-<p>
-  Si el usuario agrega fotos de mascotas u otros archivos, estos pueden almacenarse para mostrarse dentro de la cuenta del usuario y para las funciones relacionadas de Petfy.
-</p>
+    <section class="section" id="retention">
+      <h2>5. Data retention</h2>
+      <p>
+        We keep information while the account remains active or as long as necessary to provide the service, comply with legal obligations, resolve disputes, prevent fraud, or enforce our terms.
+      </p>
+      <p>
+        When a user requests deletion, we follow the app and web deletion flow, subject to any data that must be retained by law or for legitimate security purposes.
+      </p>
+    </section>
 
-<h2>6. Ubicación</h2>
-<p>
-  Petfy puede solicitar o usar ubicación si el usuario utiliza funciones de búsqueda de veterinarias cercanas o mapas. Petfy no comparte la ubicación precisa actual del usuario con otros usuarios.
-</p>
+    <section class="section" id="rights">
+      <h2>6. User rights</h2>
+      <ul>
+        <li>Review, correct, or update account and pet information.</li>
+        <li>Request account and data deletion.</li>
+        <li>Disable device permissions where possible.</li>
+        <li>Withdraw consent from features that depend on it.</li>
+      </ul>
+      <p>Privacy requests can be sent to <a href="mailto:legal@petfy.app">legal@petfy.app</a>.</p>
+    </section>
 
-<h2>7. Compras y suscripciones</h2>
-<p>
-  Petfy puede ofrecer funciones Premium o Premium Plus mediante compras dentro de la aplicación o suscripciones. Estas compras pueden ser procesadas por Google Play y/o proveedores de gestión de suscripciones.
-</p>
-<p>
-  Petfy no almacena directamente los datos completos de tarjetas de pago del usuario.
-</p>
+    <section class="section" id="security">
+      <h2>7. Security</h2>
+      <p>
+        We use access controls, authentication, server-side policies, and reasonable safeguards to protect information.
+        No system is perfectly secure, but Petfy works to reduce unnecessary exposure and protect user data.
+      </p>
+      <ul>
+        <li>We do not expose secrets in the visible interface.</li>
+        <li>Access to data is restricted to authenticated users and permitted server logic.</li>
+        <li>Photos and documents are treated as sensitive user information.</li>
+      </ul>
+    </section>
 
-<h2>8. Proveedores de servicios</h2>
-<p>
-  Para operar la aplicación, Petfy puede usar proveedores externos, incluyendo servicios de autenticación, base de datos, almacenamiento, suscripciones, mapas, análisis de errores y asistencia de IA. Estos proveedores pueden procesar información únicamente para permitir el funcionamiento de la app.
-</p>
-<p>Entre los proveedores que pueden utilizarse se incluyen:</p>
-<ul>
-  <li>Supabase, para autenticación, base de datos y almacenamiento.</li>
-  <li>Google Play, para compras y suscripciones.</li>
-  <li>RevenueCat, para gestión de suscripciones, si está habilitado.</li>
-  <li>Sentry, para monitoreo de errores y estabilidad.</li>
-  <li>Google Maps o Google Places, para funciones de ubicación y veterinarias cercanas, si están habilitadas.</li>
-  <li>Servicios de inteligencia artificial, para procesar consultas de Petfy AI, si el usuario utiliza esa función.</li>
-</ul>
+    <section class="section" id="contact">
+      <h2>8. Contact</h2>
+      <p>Privacy and support email: <a href="mailto:legal@petfy.app">legal@petfy.app</a></p>
+      <p>If this address changes, update this page before publishing a new app release.</p>
+    </section>
 
-<h2>9. Compartición de información</h2>
-<p>
-  Petfy no vende datos personales del usuario. Podemos compartir información solo cuando sea necesario para operar la aplicación, cumplir obligaciones legales, proteger la seguridad del servicio o procesar funciones solicitadas por el usuario.
-</p>
-
-<h2>10. Conservación de datos</h2>
-<p>
-  Conservamos los datos mientras la cuenta del usuario esté activa o mientras sea necesario para ofrecer el servicio. El usuario puede solicitar la eliminación de su cuenta y datos asociados.
-</p>
-
-<h2>11. Seguridad</h2>
-<p>
-  Aplicamos medidas razonables para proteger la información del usuario, incluyendo autenticación, controles de acceso y almacenamiento seguro mediante proveedores especializados. Sin embargo, ningún sistema es completamente infalible.
-</p>
-
-<h2>12. Derechos del usuario</h2>
-<p>El usuario puede solicitar:</p>
-<ul>
-  <li>Acceso a sus datos.</li>
-  <li>Corrección de información.</li>
-  <li>Eliminación de cuenta y datos asociados.</li>
-  <li>Información sobre el uso de sus datos.</li>
-</ul>
-
-<h2>13. Eliminación de cuenta y datos</h2>
-<p>
-  El usuario puede solicitar la eliminación de su cuenta y datos asociados desde la aplicación, si la función está disponible, o escribiendo a
-  <a href="mailto:support@petfy.app">support@petfy.app</a>.
-</p>
-<p>
-  También puedes consultar la página de eliminación de cuenta y datos:
-  <a href="./delete-account.html">Eliminar cuenta y datos</a>.
-</p>
-
-<h2>14. Menores de edad</h2>
-<p>
-  Petfy no está dirigida específicamente a niños. La aplicación está orientada a personas responsables del cuidado de mascotas.
-</p>
-
-<h2>15. Cambios a esta política</h2>
-<p>
-  Podemos actualizar esta Política de Privacidad cuando sea necesario. La versión actualizada estará disponible en esta misma página.
-</p>
-
-<h2>16. Contacto</h2>
-<p>
-  Para preguntas sobre esta Política de Privacidad, escribe a:
-  <a href="mailto:support@petfy.app">support@petfy.app</a>
-</p>
-
-<footer>
-  <p>© 2026 Petfy. Todos los derechos reservados.</p>
-  <p><a href="./index.html">Volver a Petfy Legal</a></p>
-</footer>
-```
-
+    <footer class="footer">
+      <span>Petfy · Arvilo Labs</span>
+      <span>Public HTTPS page</span>
+    </footer>
   </main>
 </body>
 </html>
