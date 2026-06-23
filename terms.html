@@ -1,105 +1,92 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-language="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light only" />
   <title>Terms and Conditions | Petfy</title>
   <meta name="description" content="Petfy terms and conditions." />
-  <style>
-    :root{
-      --bg:#FCFAF8;--card:#fff;--text:#1A1410;--muted:#6B6158;--line:#E8E0D8;
-      --accent:#C0400A;--soft:#FFF0E8;--shadow:0 12px 30px rgba(34,22,12,.08);--radius:24px;--max:980px;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
-    a{color:#9C3A08;text-decoration:none} a:hover{text-decoration:underline}
-    .wrap{max-width:var(--max);margin:0 auto;padding:28px 18px 56px}
-    .hero,.section{background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:32px}
-    .hero{padding:28px}
-    .section{padding:22px;margin-top:16px}
-    .badge{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:999px;background:var(--soft);color:var(--accent);font-weight:800;font-size:13px;border:1px solid rgba(192,64,10,.12)}
-    h1{margin:14px 0 8px;font-size:clamp(32px,5vw,50px);line-height:1.05;letter-spacing:-.04em}
-    h2{margin:0 0 10px;font-size:22px;letter-spacing:-.02em}
-    p,li{color:var(--muted)}
-    ul{margin:10px 0 0 20px;padding:0}
-    .note{margin-top:12px;padding:14px 16px;border-radius:18px;background:#FFF8F3;border:1px solid rgba(192,64,10,.12);color:#7A3A16}
-    .footer{margin-top:18px;padding-top:6px;color:var(--muted);font-size:13px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
-    @media (max-width:760px){.hero{padding:22px}.section{padding:18px}}
-  </style>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./language.js" defer></script>
 </head>
 <body>
   <main class="wrap">
+    <header class="topbar">
+      <a class="brand" href="./index.html">Petfy Legal</a>
+      <nav class="nav" aria-label="Legal navigation">
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+        <a href="./delete-account.html">Delete account</a>
+        <a href="./ai-notice.html">AI</a>
+        <a href="./dmca.html">DMCA</a>
+        <div class="language-switcher" aria-label="Language selector">
+          <button type="button" data-language-button="en">EN</button>
+          <button type="button" data-language-button="es">ES</button>
+        </div>
+      </nav>
+    </header>
+
     <section class="hero">
       <span class="badge">Petfy · Terms</span>
-      <h1>Terms and Conditions</h1>
-      <p>By using Petfy, you agree to these terms. If you do not agree, do not use the app or its associated web services.</p>
-      <p>Last updated: June 2026 · Contact: <a href="mailto:legal@petfy.app">legal@petfy.app</a></p>
+      <div class="lang-en">
+        <h1>Terms and Conditions</h1>
+        <p class="sub">By using Petfy, you agree to these terms. If you do not agree, do not use the app or its associated services.</p>
+      </div>
+      <div class="lang-es">
+        <h1>Terminos y condiciones</h1>
+        <p class="sub">Al usar Petfy, aceptas estos terminos. Si no estas de acuerdo, no uses la app ni sus servicios asociados.</p>
+      </div>
+      <div class="tags"><span class="tag">Last updated: June 2026</span><span class="tag">Arvilo</span></div>
     </section>
 
     <section class="section">
-      <h2>1. Service</h2>
-      <p>
-        Petfy is a care and organization app for pets. It allows users to store profiles, reminders, health records, feeding data, photos, support requests, and other features related to pet care.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>2. User responsibility</h2>
-      <ul>
-        <li>Users must enter accurate information and keep their accounts secure.</li>
-        <li>Users are responsible for verifying doses, dates, vaccines, symptoms, and clinical decisions with a licensed veterinarian.</li>
-        <li>Users must not use Petfy for illegal, fraudulent, offensive, or infringing content.</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>3. AI and informational content</h2>
-      <p>
-        Any AI feature in Petfy is intended for informational and organizational support only. It does not replace veterinary diagnosis, treatment, or emergency care.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>4. Subscriptions</h2>
-      <p>
-        Petfy may offer subscriptions in the future. When active, prices, benefits, renewals, and cancellations will be governed by the payment provider and the rules of the applicable app store.
-      </p>
-      <div class="note">
-        While RevenueCat and the real products are not active, any displayed price is for reference only.
+      <div class="lang-en">
+        <h2>1. Service and user responsibility</h2>
+        <p>Petfy is a care and organization app for pets. It may include profiles, reminders, health records, feeding data, photos, support, AI, and subscription features.</p>
+        <ul>
+          <li>Users must enter accurate information and keep accounts secure.</li>
+          <li>Users must verify doses, dates, vaccines, symptoms, and clinical decisions with a licensed veterinarian.</li>
+          <li>Users must not upload illegal, harmful, fraudulent, offensive, or infringing content.</li>
+        </ul>
+      </div>
+      <div class="lang-es">
+        <h2>1. Servicio y responsabilidad del usuario</h2>
+        <p>Petfy es una app de organizacion y cuidado de mascotas. Puede incluir perfiles, recordatorios, salud, alimentacion, fotos, soporte, IA y suscripciones.</p>
+        <ul>
+          <li>El usuario debe ingresar informacion correcta y proteger su cuenta.</li>
+          <li>El usuario debe validar dosis, fechas, vacunas, sintomas y decisiones clinicas con un veterinario autorizado.</li>
+          <li>El usuario no debe subir contenido ilegal, danino, fraudulento, ofensivo o infractor.</li>
+        </ul>
       </div>
     </section>
 
     <section class="section">
-      <h2>5. Intellectual property and content</h2>
-      <p>
-        The software, design, brand, copy, and visual assets of Petfy belong to Arvilo Labs or its licensors. Users retain ownership of their content, but grant Petfy the license needed to operate the service.
-      </p>
+      <div class="lang-en">
+        <h2>2. AI, veterinary disclaimer, and subscriptions</h2>
+        <p>AI features are informational and organizational only. They do not replace veterinary diagnosis, treatment, or emergency care.</p>
+        <p>Subscriptions may be offered in the future. When active, prices, renewals, cancellations, and refunds will follow the payment provider and app store rules.</p>
+      </div>
+      <div class="lang-es">
+        <h2>2. IA, descargo veterinario y suscripciones</h2>
+        <p>Las funciones de IA son solo informativas y de organizacion. No reemplazan diagnostico, tratamiento ni urgencia veterinaria.</p>
+        <p>Podran ofrecerse suscripciones. Cuando esten activas, precios, renovaciones, cancelaciones y reembolsos seguiran las reglas del proveedor de pago y de la tienda.</p>
+      </div>
     </section>
 
     <section class="section">
-      <h2>6. Changes and termination</h2>
-      <p>
-        Petfy may modify or discontinue features for product, safety, legal, or technical reasons. Accounts may also be suspended or closed for violation of these terms or for legal compliance.
-      </p>
+      <div class="lang-en">
+        <h2>3. Intellectual property, changes, and limits</h2>
+        <p>The Petfy software, design, brand, text, and visual assets belong to Arvilo or its licensors. Users retain ownership of their content but grant Petfy the license needed to operate the service.</p>
+        <p>Petfy may modify or discontinue features for product, safety, legal, or technical reasons. Petfy is provided as a support tool and is not guaranteed to be complete or error-free.</p>
+      </div>
+      <div class="lang-es">
+        <h2>3. Propiedad intelectual, cambios y limites</h2>
+        <p>El software, diseno, marca, textos y recursos visuales de Petfy pertenecen a Arvilo o sus licenciantes. El usuario conserva su contenido, pero concede la licencia necesaria para operar el servicio.</p>
+        <p>Petfy puede modificar o descontinuar funciones por razones de producto, seguridad, legales o tecnicas. Petfy es una herramienta de apoyo y no se garantiza que sea completa o libre de errores.</p>
+      </div>
     </section>
 
-    <section class="section">
-      <h2>7. Limitation of liability</h2>
-      <p>
-        Petfy is provided as a support tool. We do not guarantee that all information is complete, accurate, or sufficient for medical decisions. Users assume responsibility for their use of the service.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>8. Contact</h2>
-      <p>For legal or usage questions, email <a href="mailto:legal@petfy.app">legal@petfy.app</a>.</p>
-    </section>
-
-    <footer class="footer">
-      <span>Petfy · Arvilo Labs</span>
-      <span>Public document</span>
-    </footer>
+    <footer class="footer"><span>Petfy · Arvilo</span><span><a href="mailto:arvilolabs@gmail.com">arvilolabs@gmail.com</a></span></footer>
   </main>
 </body>
 </html>
