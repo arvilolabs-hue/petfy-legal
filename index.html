@@ -1,117 +1,204 @@
-<!DOCTYPE html>
-
-<html lang="es">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light only" />
   <title>Petfy Legal</title>
+  <meta name="description" content="Petfy legal center: privacy, terms, account deletion, AI notice, and copyright policy." />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #FCFAF8;
-      color: #2D2420;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
+    :root{
+      --bg:#FCFAF8;
+      --card:#FFFFFF;
+      --text:#1A1410;
+      --muted:#6B6158;
+      --line:#E8E0D8;
+      --accent:#C0400A;
+      --soft:#FFF0E8;
+      --shadow:0 12px 30px rgba(34, 22, 12, .08);
+      --radius:24px;
+      --max:980px;
+      --link:#9C3A08;
     }
-
-```
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-h1 {
-  font-size: 36px;
-  margin-bottom: 8px;
-  color: #2D2420;
-}
-
-p {
-  font-size: 16px;
-}
-
-.muted {
-  color: #8A7E76;
-}
-
-.card {
-  background: #FFFFFF;
-  border: 1px solid #E9DED6;
-  border-radius: 16px;
-  padding: 24px;
-  margin-top: 24px;
-}
-
-.links {
-  display: grid;
-  gap: 16px;
-  margin-top: 24px;
-}
-
-a.card-link {
-  display: block;
-  text-decoration: none;
-  color: #2D2420;
-  background: #FFFFFF;
-  border: 1px solid #E9DED6;
-  border-radius: 16px;
-  padding: 20px;
-  transition: border-color 0.2s ease, transform 0.2s ease;
-}
-
-a.card-link:hover {
-  border-color: #F27A3A;
-  transform: translateY(-2px);
-}
-
-.card-link strong {
-  display: block;
-  color: #F27A3A;
-  font-size: 18px;
-  margin-bottom: 6px;
-}
-
-footer {
-  margin-top: 40px;
-  font-size: 14px;
-  color: #8A7E76;
-}
-```
-
+    *{box-sizing:border-box}
+    html,body{
+      margin:0;
+      padding:0;
+      background:
+        radial-gradient(circle at top left, rgba(255,159,107,.24), transparent 30%),
+        radial-gradient(circle at top right, rgba(192,64,10,.12), transparent 25%),
+        var(--bg);
+      color:var(--text);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height:1.55;
+    }
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max);margin:0 auto;padding:28px 18px 56px}
+    .hero{
+      background:linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.78));
+      border:1px solid rgba(232,224,216,.9);
+      box-shadow:var(--shadow);
+      border-radius:32px;
+      padding:28px;
+      overflow:hidden;
+      position:relative;
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 12px;
+      border-radius:999px;
+      background:var(--soft);
+      color:var(--accent);
+      font-weight:800;
+      font-size:13px;
+      border:1px solid rgba(192,64,10,.12);
+    }
+    h1{
+      margin:14px 0 10px;
+      font-size:clamp(32px, 5vw, 56px);
+      line-height:1.02;
+      letter-spacing:-.04em;
+    }
+    .sub{
+      max-width:70ch;
+      color:var(--muted);
+      font-size:16px;
+      margin:0;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(12, 1fr);
+      gap:16px;
+      margin-top:18px;
+    }
+    .card{
+      grid-column:span 6;
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:20px;
+    }
+    .card h2{margin:0 0 8px;font-size:20px}
+    .card p{margin:0 0 14px;color:var(--muted)}
+    .links{display:grid;gap:12px}
+    .linkbox{
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      align-items:center;
+      padding:16px 18px;
+      border-radius:18px;
+      border:1px solid var(--line);
+      background:linear-gradient(180deg, #fff, #fff8f3);
+    }
+    .linkbox strong{display:block;font-size:15px}
+    .linkbox span{display:block;font-size:13px;color:var(--muted)}
+    .pill{
+      flex:none;
+      padding:8px 12px;
+      border-radius:999px;
+      background:var(--soft);
+      color:var(--accent);
+      font-size:12px;
+      font-weight:800;
+      border:1px solid rgba(192,64,10,.12);
+      white-space:nowrap;
+    }
+    .footer{
+      margin-top:18px;
+      padding:18px 4px 0;
+      color:var(--muted);
+      font-size:13px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:space-between
+    }
+    .meta{display:flex;flex-wrap:wrap;gap:10px}
+    .meta span{padding:8px 10px;border:1px solid var(--line);border-radius:999px;background:#fff}
+    @media (max-width: 760px){
+      .card{grid-column:span 12}
+      .hero{padding:22px}
+      .linkbox{flex-direction:column;align-items:flex-start}
+      .pill{align-self:flex-start}
+    }
   </style>
 </head>
 <body>
-  <main>
-    <h1>Petfy Legal</h1>
-    <p class="muted">Información legal de Petfy: Cuidado de Mascotas.</p>
+  <main class="wrap">
+    <section class="hero">
+      <span class="badge">Petfy Legal</span>
+      <h1>Petfy Legal Center</h1>
+      <p class="sub">
+        Public pages for privacy, terms, account deletion, AI notice, and copyright. These links are intended for app store review and user access.
+      </p>
+    </section>
 
-```
-<div class="card">
-  <p>
-    En esta página puedes consultar los documentos legales relacionados con Petfy, incluyendo la política de privacidad y la información sobre eliminación de cuenta y datos.
-  </p>
-</div>
+    <section class="grid" aria-label="Legal documents">
+      <article class="card">
+        <h2>Main documents</h2>
+        <p>Keep these pages public, stable, and up to date.</p>
+        <div class="links">
+          <a class="linkbox" href="./privacy.html">
+            <div>
+              <strong>Privacy Policy</strong>
+              <span>What Petfy collects, how it uses data, and when it shares it.</span>
+            </div>
+            <span class="pill">privacy.html</span>
+          </a>
+          <a class="linkbox" href="./terms.html">
+            <div>
+              <strong>Terms and Conditions</strong>
+              <span>Rules of use, subscriptions, limits, and responsibilities.</span>
+            </div>
+            <span class="pill">terms.html</span>
+          </a>
+          <a class="linkbox" href="./delete-account.html">
+            <div>
+              <strong>Delete Account and Data</strong>
+              <span>Public deletion request flow without reopening the app.</span>
+            </div>
+            <span class="pill">delete-account.html</span>
+          </a>
+        </div>
+      </article>
 
-<section class="links">
-  <a class="card-link" href="./privacy.html">
-    <strong>Política de privacidad</strong>
-    Consulta cómo Petfy recopila, usa, protege y administra la información relacionada con la aplicación.
-  </a>
+      <article class="card">
+        <h2>Supporting pages</h2>
+        <p>Recommended to close the legal and app store review gaps.</p>
+        <div class="links">
+          <a class="linkbox" href="./ai-notice.html">
+            <div>
+              <strong>AI Notice</strong>
+              <span>Informational use, consent, and safety limitations.</span>
+            </div>
+            <span class="pill">ai-notice.html</span>
+          </a>
+          <a class="linkbox" href="./dmca.html">
+            <div>
+              <strong>Copyright / DMCA</strong>
+              <span>Infringement reporting and counter-notification.</span>
+            </div>
+            <span class="pill">dmca.html</span>
+          </a>
+        </div>
+      </article>
+    </section>
 
-  <a class="card-link" href="./delete-account.html">
-    <strong>Eliminación de cuenta y datos</strong>
-    Consulta cómo solicitar la eliminación de tu cuenta y de los datos asociados a Petfy.
-  </a>
-</section>
-
-<footer>
-  <p>© 2026 Petfy. Todos los derechos reservados.</p>
-  <p>Contacto: support@petfy.app</p>
-</footer>
-```
-
+    <footer class="footer">
+      <div class="meta">
+        <span>Petfy</span>
+        <span>Arvilo Labs</span>
+        <span>Last updated: June 2026</span>
+      </div>
+      <div>
+        Legal contact: <a href="mailto:legal@petfy.app">legal@petfy.app</a>
+      </div>
+    </footer>
   </main>
 </body>
 </html>
