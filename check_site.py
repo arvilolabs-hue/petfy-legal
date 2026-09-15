@@ -68,8 +68,10 @@ def main() -> None:
                 errors.append(f"{path.name}: draft notice or noindex missing")
         if "Google Play" in text or "June 2026" in text:
             errors.append(f"{path.name}: historical release copy remains")
-        if any(marker in text for marker in ("Brandon Stevens", "+505", "Colonia 9 de Junio")):
+        if any(marker in text for marker in ("+505", "Colonia 9 de Junio")):
             errors.append(f"{path.name}: private owner contact unexpectedly published")
+        if path.name in {"index.html", "support.html"} and "Brandon Stevens" in text:
+            errors.append(f"{path.name}: legal owner identity placed in brand-facing page")
         for link in page.links:
             parts = urlsplit(link)
             if parts.scheme or parts.netloc:
@@ -90,6 +92,9 @@ def main() -> None:
     for name in ("terms.html", "delete-account.html"):
         if "https://apps.apple.com/account/subscriptions" not in parsed[name].links:
             raise SystemExit(f"{name}: Apple subscription management link missing")
+    for name in ("privacy.html", "terms.html"):
+        if "Brandon Stevens Aragón Mejía" not in (ROOT / name).read_text(encoding="utf-8"):
+            raise SystemExit(f"{name}: legal owner identity missing")
     print(f"Checked {len(HTML_FILES)} bilingual pages, local links, anchors, landmarks, and draft notices.")
 
 

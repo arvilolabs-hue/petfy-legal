@@ -90,7 +90,7 @@ def page_shell(title: str, description: str, body: str, current: str, es_title: 
 def draft_notice() -> str:
     return f'''<div class="draft-notice" role="note">
       <strong>{localized('Texto en revisión', 'Text under review')}</strong>
-      <p>{localized('Esta propuesta aún no es la versión legal vigente. La identidad formal del responsable y otros puntos del lanzamiento internacional requieren validación.', 'This proposal is not yet the effective legal version. The formal controller identity and other international launch details still require validation.')} · {DRAFT_VERSION}</p>
+      <p>{localized('Esta propuesta aún no es la versión legal vigente. Faltan decisiones sobre menores, transferencias, conservación y otros puntos del lanzamiento internacional.', 'This proposal is not yet the effective legal version. Decisions about minors, transfers, retention, and other international launch details remain.')} · {DRAFT_VERSION}</p>
     </div>'''
 
 
