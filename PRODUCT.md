@@ -1,0 +1,35 @@
+<!-- impeccable:product-schema 1 -->
+# Petfy public site
+
+## Platform
+
+Web. Static HTML/CSS/JavaScript hosted on GitHub Pages; every public page must work without sign-in on iPhone and iPad.
+
+## Purpose and users
+
+This is the public home, support center, and document library for Petfy. A visitor should understand what Petfy does, find the right policy quickly, contact support, and learn how to delete an account or manage a subscription. App Store reviewers should be able to reach the same information directly.
+
+## Confirmed product facts
+
+- Petfy organizes pet profiles, care records, reminders, nearby veterinarians, reports, and optional Petfy AI.
+- Petfy launches on the App Store for iPhone and iPad only. The current release does not include Google Play.
+- Petfy Premium has weekly and annual auto-renewing options through Apple; current prices are shown by the App Store at purchase time.
+- The owner uses **Arvilo Labs** as the visible brand for Petfy and future apps. The owner says Arvilo Labs is not yet registered as a separate legal entity.
+- The public contact chosen by the owner is `arvilolabs@gmail.com`. The owner confirms that it receives messages and that they will monitor it for support, privacy, and deletion requests. The brand-facing pages show Arvilo Labs, while the legal pages identify Brandon Stevens Aragón Mejía as the actual owner and controller. Do not publish the personal phone or postal address on this site.
+- The owner chooses no additional Petfy-wide minimum age; local child-privacy requirements still need assessment.
+- Spanish and English are the first full public site languages. Other launch locales require reviewed translations before legal publication.
+
+## Brand commitments
+
+Combine the warm Petfy identity and its official mascot with the Arvilo Labs parent brand. The site should feel current and inviting while giving long legal text calm, readable layouts. Use official Petfy assets from the application repository.
+
+## Operating constraints
+
+- This repository is a public GitHub Pages site, so no secrets or private documents belong here.
+- The owner directed publication of the public EN/ES pages as version 1.0 on 2026-09-15. The copy uses verified product behavior and qualified language where provider details vary. Publication by the owner and Codex does not certify compliance in every launch country; keep international launch checks in `RELEASE_DECISIONS.md`.
+- The app, App Store metadata, and site must ultimately refer to the same approved document versions and stable URLs.
+- Arvilo Labs is the visible trade name, not a separate registered corporation. Identify the actual natural-person controller on the legal pages and use Arvilo Labs for the visual brand. The possible EU representative remains a separate release question.
+
+## Stack
+
+The existing plain static stack and GitHub Pages hosting are preserved. This choice is based on the incumbent repository and the user's instruction to finish the existing site; no framework migration is needed.
