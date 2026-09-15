@@ -64,8 +64,10 @@ def main() -> None:
         if page.images_without_alt:
             errors.append(f"{path.name}: image without alt attribute")
         if path.name not in {"index.html", "support.html"}:
-            if "draft-notice" not in page.classes or 'content="noindex,nofollow"' not in text:
-                errors.append(f"{path.name}: draft notice or noindex missing")
+            if "document-meta" not in page.classes or 'datetime="2026-09-15"' not in text:
+                errors.append(f"{path.name}: effective date or version missing")
+        if any(marker in text.lower() for marker in ("borrador", "texto en revisión", "text under review", "still drafts", "noindex,nofollow")):
+            errors.append(f"{path.name}: release placeholder remains")
         if "Google Play" in text or "June 2026" in text:
             errors.append(f"{path.name}: historical release copy remains")
         if any(marker in text for marker in ("+505", "Colonia 9 de Junio")):
@@ -95,7 +97,7 @@ def main() -> None:
     for name in ("privacy.html", "terms.html"):
         if "Brandon Stevens Aragón Mejía" not in (ROOT / name).read_text(encoding="utf-8"):
             raise SystemExit(f"{name}: legal owner identity missing")
-    print(f"Checked {len(HTML_FILES)} bilingual pages, local links, anchors, landmarks, and draft notices.")
+    print(f"Checked {len(HTML_FILES)} bilingual pages, local links, anchors, landmarks, legal identity, and effective dates.")
 
 
 if __name__ == "__main__":

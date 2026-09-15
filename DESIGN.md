@@ -7,4 +7,4 @@ The public site uses two registers. The landing page is a welcoming editorial in
 - **Layout:** generous but purposeful space; large navigation rows for legal tasks instead of nested equal cards. A split hero uses the Petfy buddy asset at a size that reads on mobile and desktop.
 - **Navigation:** logo/brand, direct Support and Documents links, and a compact EN/ES selector. Policies have a persistent index on wide screens and an inline index on mobile.
 - **Accessibility:** semantic landmarks, skip link, visible keyboard focus, color contrast, reduced-motion support, explicit current-page state, stable copy in both languages.
-- **Content:** separate the marketing introduction from legal statements; label local draft status until reviewed. Never claim Arvilo Labs is a registered corporation.
+- **Content:** separate the marketing introduction from legal statements; show a clear effective date and version on each document. Never claim Arvilo Labs is a registered corporation.

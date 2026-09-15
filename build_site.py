@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""Generate dependency-free GitHub Pages HTML from reviewed source copy.
-
-Current legal content is a review draft. RELEASE_DECISIONS.md must be resolved
-before changing DRAFT to an effective policy and publishing it.
-"""
+"""Generate the dependency-free public Petfy site for GitHub Pages."""
 
 from __future__ import annotations
 
@@ -13,7 +9,8 @@ from pathlib import Path
 from content import PAGES
 
 ROOT = Path(__file__).resolve().parent
-DRAFT_VERSION = "2026-09-15-draft.3"
+POLICY_VERSION = "1.0"
+EFFECTIVE_DATE = "2026-09-15"
 
 
 def localized(es: str, en: str, tag: str = "span") -> str:
@@ -28,7 +25,6 @@ def svg_arrow() -> str:
 
 
 def page_shell(title: str, description: str, body: str, current: str, es_title: str | None = None) -> str:
-    robots_tag = '<meta name="robots" content="noindex,nofollow" />\n  ' if current == "legal" else ""
     nav = [
         ("index.html", "home", "Inicio", "Home"),
         ("index.html#documents", "documents", "Documentos", "Documents"),
@@ -48,7 +44,7 @@ def page_shell(title: str, description: str, body: str, current: str, es_title: 
   <meta name="color-scheme" content="light" />
   <meta name="description" content="{escape(description, quote=True)}" />
   <meta name="theme-color" content="#fcfaf8" />
-  {robots_tag}<title data-title-en="{escape(title, quote=True)} · Petfy" data-title-es="{escape(es_title or title, quote=True)} · Petfy">{escape(title)} · Petfy</title>
+  <title data-title-en="{escape(title, quote=True)} · Petfy" data-title-es="{escape(es_title or title, quote=True)} · Petfy">{escape(title)} · Petfy</title>
   <link rel="icon" type="image/png" href="./assets/favicon.png" />
   <link rel="stylesheet" href="./style.css" />
   <script src="./language.js" defer></script>
@@ -87,10 +83,10 @@ def page_shell(title: str, description: str, body: str, current: str, es_title: 
 '''
 
 
-def draft_notice() -> str:
-    return f'''<div class="draft-notice" role="note">
-      <strong>{localized('Texto en revisión', 'Text under review')}</strong>
-      <p>{localized('Esta propuesta aún no es la versión legal vigente. Faltan decisiones sobre menores, transferencias, conservación y otros puntos del lanzamiento internacional.', 'This proposal is not yet the effective legal version. Decisions about minors, transfers, retention, and other international launch details remain.')} · {DRAFT_VERSION}</p>
+def document_meta() -> str:
+    return f'''<div class="document-meta" role="note">
+      <time datetime="{EFFECTIVE_DATE}">{localized('Vigente desde el 15 de septiembre de 2026', 'Effective September 15, 2026')}</time>
+      <span>{localized('Versión', 'Version')} {POLICY_VERSION}</span>
     </div>'''
 
 
@@ -134,7 +130,7 @@ def home_page() -> str:
       <p>{localized('Organiza perfiles, vacunas, alimentación, recordatorios y documentos de tus mascotas. Encuentra veterinarias cercanas y, si eliges Premium, usa funciones adicionales como Petfy AI y reportes PDF.', 'Organize pet profiles, vaccines, feeding, reminders, and documents. Find nearby vets and, if you choose Premium, use additional features such as Petfy AI and PDF reports.')}</p>
     </section>
     <section class="journeys outer" id="documents" aria-labelledby="journeys-title">
-      <div class="section-heading"><span class="eyeline">{localized('Encuentra lo que necesitas', 'Find what you need')}</span><h2 id="journeys-title">{localized('Tres caminos. Una respuesta clara.', 'Three paths. A clear answer.')}</h2><p>{localized('Las páginas jurídicas revisadas aún son borradores; te mostramos exactamente qué falta validar.', 'The revised legal pages are still drafts; we show exactly what remains to validate.')}</p></div>
+      <div class="section-heading"><span class="eyeline">{localized('Encuentra lo que necesitas', 'Find what you need')}</span><h2 id="journeys-title">{localized('Tres caminos. Una respuesta clara.', 'Three paths. A clear answer.')}</h2><p>{localized('Consulta cómo usamos tus datos, cuáles son las condiciones de Petfy y cómo eliminar una cuenta.', 'Learn how we use data, read Petfy’s terms, and find out how to delete an account.')}</p></div>
       <div class="path-list">{path_html}</div>
     </section>
     <section class="support-feature outer" aria-labelledby="support-title">
@@ -178,7 +174,7 @@ def legal_page(key: str) -> str:
     <div class="page-intro outer legal-intro"><a class="breadcrumb" href="./index.html">{localized('Inicio', 'Home')}</a><span class="breadcrumb-sep">/</span><span>{localized('Documentos', 'Documents')}</span><h1>{localized(escape(data['title']['es']), escape(data['title']['en']))}</h1><p>{localized(escape(data['summary']['es']), escape(data['summary']['en']))}</p></div>
     <div class="legal-layout outer">
       <aside class="legal-toc" aria-label="On this page"><strong>{localized('En esta página', 'On this page')}</strong><nav>{toc}</nav><a class="toc-help" href="./support.html">{localized('¿Necesitas ayuda?', 'Need help?')}{svg_arrow()}</a></aside>
-      <article class="legal-prose">{draft_notice()}{sections}<div class="end-panel"><strong>{localized('¿Queda alguna pregunta?', 'Still have a question?')}</strong><p>{localized('Escríbenos y revisaremos tu caso.', 'Email us and we will look into it.')}</p><a href="./support.html">{localized('Ver canales de ayuda', 'See support options')}{svg_arrow()}</a></div></article>
+      <article class="legal-prose">{document_meta()}{sections}<div class="end-panel"><strong>{localized('¿Queda alguna pregunta?', 'Still have a question?')}</strong><p>{localized('Escríbenos y revisaremos tu caso.', 'Email us and we will look into it.')}</p><a href="./support.html">{localized('Ver canales de ayuda', 'See support options')}{svg_arrow()}</a></div></article>
     </div>'''
     return page_shell(data["title"]["en"], data["summary"]["en"], body, "legal", data["title"]["es"])
 

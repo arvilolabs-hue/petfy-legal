@@ -26,7 +26,7 @@ Combine the warm Petfy identity and its official mascot with the Arvilo Labs par
 ## Operating constraints
 
 - This repository is a public GitHub Pages site, so no secrets or private documents belong here.
-- The owner plans to review legal text together with Codex, without an outside legal reviewer. The text remains a draft until factual accuracy, regional obligations, and a release decision establish effective versions. Neither this review method nor a generated draft guarantees legal compliance. Do not silently replace the public effective policy with unreviewed draft copy.
+- The owner directed publication of the public EN/ES pages as version 1.0 on 2026-09-15. The copy uses verified product behavior and qualified language where provider details vary. Publication by the owner and Codex does not certify compliance in every launch country; keep international launch checks in `RELEASE_DECISIONS.md`.
 - The app, App Store metadata, and site must ultimately refer to the same approved document versions and stable URLs.
 - Arvilo Labs is the visible trade name, not a separate registered corporation. Identify the actual natural-person controller on the legal pages and use Arvilo Labs for the visual brand. The possible EU representative remains a separate release question.
 
